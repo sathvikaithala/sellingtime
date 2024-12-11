@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Social Media Post</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+    }
+    .card {
+      background: white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    .btn {
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    .tone-btn {
+      border: 1px solid #1C4D3B;
+      background-color: #E8ECEC;
+      color: #1C4D3B;
+    }
+    .tone-btn.active {
+      background-color: #1C4D3B;
+      color: white;
+    }
+  </style>
+</head>
+<body class="bg-gray-200 text-gray-800">
+
+  <!-- Header -->
+  <header class="h-20 bg-forest-green text-white flex items-center px-6">
+    <h1 class="text-2xl font-bold">Selling Time</h1>
+    <nav class="ml-auto">
+      <a href="/dashboard.html" class="text-white hover:underline mr-4">Dashboard</a>
+      <a href="/login.html" class="text-white hover:underline">Logout</a>
+    </nav>
+  </header>
+
+  <!-- Content -->
+  <main class="py-12 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6 text-forest-green">Create a Social Media Post</h2>
+      <div class="card p-6">
+        <!-- Input Form -->
+        <form id="postForm" class="space-y-4">
+          <div>
+            <label for="brand" class="block text-gray-700 font-semibold">Brand</label>
+            <input type="text" id="brand" name="brand" class="w-full border-gray-300 rounded-lg shadow-sm p-3" placeholder="e.g., Rolex" required>
+          </div>
+          <div>
+            <label for="model" class="block text-gray-700 font-semibold">Model</label>
+            <input type="text" id="model" name="model" class="w-full border-gray-300 rounded-lg shadow-sm p-3" placeholder="e.g., Submariner" required>
+          </div>
+          <div>
+            <label for="reference" class="block text-gray-700 font-semibold">Reference Number</label>
+            <input type="text" id="reference" name="reference" class="w-full border-gray-300 rounded-lg shadow-sm p-3" placeholder="e.g., 116610LN" required>
+          </div>
+          <div>
+            <label for="condition" class="block text-gray-700 font-semibold">Condition</label>
+            <input type="text" id="condition" name="condition" class="w-full border-gray-300 rounded-lg shadow-sm p-3" placeholder="e.g., Excellent" required>
+          </div>
+          <div>
+            <p class="block text-gray-700 font-semibold mb-2">Post Tone</p>
+            <div id="toneSelection" class="flex gap-4">
+              <button type="button" class="tone-btn py-2 px-4 rounded-lg" data-tone="professional">Professional</button>
+              <button type="button" class="tone-btn py-2 px-4 rounded-lg" data-tone="playful">Playful</button>
+              <button type="button" class="tone-btn py-2 px-4 rounded-lg" data-tone="luxurious">Luxurious</button>
+              <button type="button" class="tone-btn py-2 px-4 rounded-lg" data-tone="persuasive">Persuasive</button>
+              <button type="button" class="tone-btn py-2 px-4 rounded-lg" data-tone="minimalist">Minimalist</button>
+            </div>
+          </div>
+          <div>
+            <label for="hashtags" class="block text-gray-700 font-semibold">Hashtags</label>
+            <input type="text" id="hashtags" name="hashtags" class="w-full border-gray-300 rounded-lg shadow-sm p-3" placeholder="e.g., #luxury #watches">
+          </div>
+          <button type="button" id="generatePost" class="btn bg-gold hover:bg-yellow-700 text-white py-3 px-6 rounded-lg">
+            Generate Post
+          </button>
+        </form>
+      </div>
+
+      <!-- Post Preview -->
+      <div id="postPreview" class="card p-6 mt-8 hidden">
+        <h3 class="text-2xl font-bold mb-4 text-forest-green">Generated Post</h3>
+        <p id="generatedPost" class="text-gray-700"></p>
+        <button id="copyPost" class="btn bg-forest-green hover:bg-green-800 text-white py-2 px-4 rounded-lg mt-4">
+          Copy to Clipboard
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    let selectedTone = "professional"; // Default tone
+
+    document.querySelectorAll('.tone-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        // Set active state
+        document.querySelectorAll('.tone-btn').forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        selectedTone = button.getAttribute('data-tone');
+      });
+    });
+
+    document.getElementById('generatePost').addEventListener('click', () => {
+      const brand = document.getElementById('brand').value;
+      const model = document.getElementById('model').value;
+      const reference = document.getElementById('reference').value;
+      const condition = document.getElementById('condition').value;
+      const hashtags = document.getElementById('hashtags').value;
+
+      let toneMessage = '';
+      switch (selectedTone) {
+        case "professional":
+          toneMessage = "Invest in excellence and timeless sophistication.";
+          break;
+        case "playful":
+          toneMessage = "Why not treat yourself to a little luxury today?";
+          break;
+        case "luxurious":
+          toneMessage = "Experience the pinnacle of elegance and craftsmanship.";
+          break;
+        case "persuasive":
+          toneMessage = "Act fast—this iconic piece won't last long!";
+          break;
+        case "minimalist":
+          toneMessage = "Simply timeless. A true collector's piece.";
+          break;
+      }
+
+      const postText = `${brand} ${model} (${reference}) in ${condition} condition. ${toneMessage} ${hashtags}`;
+      document.getElementById('generatedPost').textContent = postText;
+
+      // Show the preview
+      document.getElementById('postPreview').classList.remove('hidden');
+    });
+
+    document.getElementById('copyPost').addEventListener('click', () => {
+      const postText = document.getElementById('generatedPost').textContent;
+      navigator.clipboard.writeText(postText).then(() => {
+        alert('Post copied to clipboard!');
+      });
+    });
+  </script>
+</body>
+</html>
