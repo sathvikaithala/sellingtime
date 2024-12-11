@@ -96,12 +96,28 @@
   </section>
 
   <!-- Call to Action Section -->
-  <section class="py-12 px-6 text-center">
-    <h2 class="text-3xl font-bold mb-4 text-forest-green">Start Your Journey with Selling Time</h2>
-    <p class="text-gray-600 mb-6">Join our growing community of resellers and take your business to the next level.</p>
-    <a href="#signup" class="btn bg-forest-green hover:bg-forest-green-dark text-white py-3 px-6 rounded-lg text-lg">
-      Create an Account
-    </a>
+  <section id="signup" class="py-16 px-8 bg-gray-200">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Join Selling Time</h2>
+      <p class="text-lg text-gray-600 mb-8">Sign up now to access tools that streamline your luxury watch business.</p>
+      <form action="/thank-you" method="POST" data-netlify="true" class="bg-white shadow-md rounded-lg p-8">
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 font-semibold mb-2">Name</label>
+          <input type="text" id="name" name="name" class="w-full border-gray-300 rounded-lg shadow-sm p-3" placeholder="Your Name" required>
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+          <input type="email" id="email" name="email" class="w-full border-gray-300 rounded-lg shadow-sm p-3" placeholder="you@example.com" required>
+        </div>
+        <div class="mb-4">
+          <label for="password" class="block text-gray-700 font-semibold mb-2">Password</label>
+          <input type="password" id="password" name="password" class="w-full border-gray-300 rounded-lg shadow-sm p-3" placeholder="Create a password" required>
+        </div>
+        <button type="submit" class="bg-gold hover:bg-yellow-700 text-white py-3 px-6 rounded-lg w-full">
+          Create Account
+        </button>
+      </form>
+    </div>
   </section>
 
   <!-- Footer -->
