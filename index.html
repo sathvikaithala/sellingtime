@@ -1,874 +1,117 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2299.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #ffffff; -webkit-text-stroke: #ffffff; min-height: 14.0px}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9}
-    span.s1 {font-kerning: none}
-    span.s2 {font-kerning: none; color: #ffffff; -webkit-text-stroke: 0px #ffffff}
-    span.s3 {text-decoration: underline ; font-kerning: none; color: #0000e9; -webkit-text-stroke: 0px #0000e9}
-    td.td1 {margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
-    td.td2 {width: 774.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selling Time</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #E8ECEC;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+    .bg-forest-green {
+      background-color: #1C4D3B;
+    }
+    .text-forest-green {
+      color: #1C4D3B;
+    }
+    .bg-gold {
+      background-color: #96711A;
+    }
+    .text-gold {
+      color: #96711A;
+    }
+    .card {
+      background: white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    .btn {
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
   </style>
 </head>
-<body>
-<table cellspacing="0" cellpadding="0">
-  <tbody>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;html lang="en"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;head&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;meta charset="UTF-8"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;title&gt;Selling Time&lt;/title&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p3"><span class="s2">&lt;script src="<a href="https://cdn.tailwindcss.com/"><span class="s3">https://cdn.tailwindcss.com</span></a>"&gt;&lt;/script&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p3"><span class="s2">&lt;link rel="stylesheet" href="<a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"><span class="s3">https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css</span></a>"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p3"><span class="s2">&lt;link href="<a href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap"><span class="s3">https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap</span></a>" rel="stylesheet"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;style&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">body {</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">font-family: 'Roboto', sans-serif;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">}</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">h1, h2, h3 {</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">font-family: 'Playfair Display', serif;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">}</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">.forest-green {</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">background-color: #0b3d0b;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">color: #f9f9f9;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">}</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">.forest-green-hover:hover {</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">background-color: #095c09;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">}</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/style&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/head&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;body class="bg-gray-50 text-gray-900"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;!-- Navbar --&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;nav class="bg-white shadow-lg"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;div class="flex justify-between h-16"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;div class="flex"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;a href="<a href="https://resilient-monstera-5d2cf5.netlify.app/#"><span class="s3">#</span></a>" class="flex items-center text-lg font-bold text-gray-800 hover:text-gray-900"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;i class="fas fa-clock mr-2"&gt;&lt;/i&gt; Selling Time</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/a&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/div&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;div class="flex items-center"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;a href="<a href="https://resilient-monstera-5d2cf5.netlify.app/#features"><span class="s3">#features</span></a>" class="text-gray-700 hover:text-gray-900 px-4"&gt;Features&lt;/a&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;a href="<a href="https://resilient-monstera-5d2cf5.netlify.app/#signup"><span class="s3">#signup</span></a>" class="text-gray-700 hover:text-gray-900 px-4"&gt;Sign Up&lt;/a&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;a href="<a href="https://resilient-monstera-5d2cf5.netlify.app/#login"><span class="s3">#login</span></a>" class="text-gray-700 hover:text-gray-900 px-4"&gt;Login&lt;/a&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/div&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/div&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/div&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/nav&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;!-- Hero Section with Header Image --&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;header class="relative bg-gray-900 text-white"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;img src="<a href="https://source.unsplash.com/1600x600/?luxury,watch"><span class="s3">https://source.unsplash.com/1600x600/?luxury,watch</span></a>" alt="Luxury Watches" class="absolute inset-0 w-full h-full object-cover opacity-50"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;div class="relative max-w-7xl mx-auto px-4 py-20 text-center"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;h1 class="text-5xl md:text-6xl font-bold mb-6"&gt;Selling Time&lt;/h1&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;p class="text-lg mb-8"&gt;Your ultimate tool for creating stunning luxury watch listings and captivating Instagram posts.&lt;/p&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;a href="<a href="https://resilient-monstera-5d2cf5.netlify.app/#signup"><span class="s3">#signup</span></a>" class="forest-green hover:forest-green-hover text-white py-3 px-6 rounded-lg shadow-lg text-lg font-medium"&gt;Get Started&lt;/a&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/div&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/header&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;!-- Features Section --&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;section id="features" class="py-16 bg-gray-100"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;div class="max-w-7xl mx-auto px-4 text-center"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;h2 class="text-3xl font-bold mb-8"&gt;Why Choose Selling Time?&lt;/h2&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;div class="grid md:grid-cols-3 gap-8"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;div class="p-6 bg-white rounded-lg shadow-md"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;i class="fas fa-bullhorn text-green-600 text-4xl mb-4"&gt;&lt;/i&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;h3 class="text-xl font-bold mb-2"&gt;Generate Instagram Posts&lt;/h3&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;p&gt;Create catchy captions and hashtags for stunning posts that captivate buyers.&lt;/p&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/div&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;div class="p-6 bg-white rounded-lg shadow-md"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;i class="fas fa-file-alt text-green-600 text-4xl mb-4"&gt;&lt;/i&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;h3 class="text-xl font-bold mb-2"&gt;Custom Watch Descriptions&lt;/h3&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;p&gt;Detailed listings tailored for platforms like Facebook, eBay, and more.&lt;/p&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/div&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;div class="p-6 bg-white rounded-lg shadow-md"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;i class="fas fa-lightbulb text-green-600 text-4xl mb-4"&gt;&lt;/i&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;h3 class="text-xl font-bold mb-2"&gt;Expert Tips&lt;/h3&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;p&gt;Suggestions for better photos, angles, and storytelling to boost sales.&lt;/p&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/div&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/div&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/div&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/section&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;!-- Sign-Up Section --&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;section id="signup" class="py-16 bg-white"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;div class="max-w-7xl mx-auto px-4 text-center"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;h2 class="text-3xl font-bold mb-6"&gt;Join Today&lt;/h2&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;p class="text-lg mb-8"&gt;Create an account to unlock all features and keep track of your listings.&lt;/p&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;form class="max-w-lg mx-auto" action="/signup" method="POST" data-netlify="true"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;div class="mb-4"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;input type="text" name="name" placeholder="Full Name" required class="w-full px-4 py-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-600"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/div&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;div class="mb-4"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;input type="email" name="email" placeholder="Email Address" required class="w-full px-4 py-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-600"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/div&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;div class="mb-4"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;input type="password" name="password" placeholder="Password" required class="w-full px-4 py-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-600"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/div&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;button type="submit" class="forest-green hover:forest-green-hover text-white py-3 px-6 rounded-lg shadow-lg font-medium"&gt;Sign Up&lt;/button&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/form&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/div&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/section&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;!-- Footer --&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;footer class="forest-green text-white py-6"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;div class="max-w-7xl mx-auto px-4 text-center"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;p&gt;&amp;copy; 2024 Selling Time. All rights reserved.&lt;/p&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/div&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/footer&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/body&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/html&gt;</span></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<body class="text-gray-800">
+
+  <!-- Hero Section -->
+  <header class="h-80 flex items-center justify-center text-center text-white bg-forest-green">
+    <div class="p-6 rounded-lg">
+      <h1 class="text-4xl font-bold mb-4 text-gold">Welcome to Selling Time</h1>
+      <p class="text-lg mb-6">Streamline your luxury watch business with tools designed to save time and maximize profits.</p>
+      <a href="#signup" class="btn bg-gold hover:bg-yellow-700 text-white py-3 px-6 rounded-lg text-lg">
+        Get Started
+      </a>
+    </div>
+  </header>
+
+  <!-- Features Section -->
+  <section class="py-12 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6 text-forest-green">Our Features</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="card p-6">
+          <i class="fas fa-edit text-3xl text-forest-green mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Automated Listings</h3>
+          <p>Create polished Instagram posts and listing descriptions in seconds.</p>
+        </div>
+        <div class="card p-6">
+          <i class="fas fa-table text-3xl text-forest-green mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Buy/Sell Tracking</h3>
+          <p>Track transactions, calculate profits, and manage inventory effortlessly.</p>
+        </div>
+        <div class="card p-6">
+          <i class="fas fa-user-circle text-3xl text-forest-green mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Account Management</h3>
+          <p>Keep a history of your watches, posts, and listings for easy reference.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-12 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-6 text-forest-green">What Our Users Say</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="card p-6">
+          <p class="text-gray-600 italic mb-4">"Selling Time has made managing my watch business effortless. Highly recommend for any reseller!"</p>
+          <h3 class="font-bold text-lg text-forest-green">- Alex M., Watch Dealer</h3>
+        </div>
+        <div class="card p-6">
+          <p class="text-gray-600 italic mb-4">"This app does it all! From creating posts to tracking sales, it’s a game-changer."</p>
+          <h3 class="font-bold text-lg text-forest-green">- Sarah L., Watch Enthusiast</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="py-12 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-4 text-forest-green">Start Your Journey with Selling Time</h2>
+    <p class="text-gray-600 mb-6">Join our growing community of resellers and take your business to the next level.</p>
+    <a href="#signup" class="btn bg-forest-green hover:bg-forest-green-dark text-white py-3 px-6 rounded-lg text-lg">
+      Create an Account
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 bg-gray-100 text-center text-gray-600">
+    <p>&copy; 2024 Selling Time. All rights reserved.</p>
+    <p>
+      <a href="#" class="text-forest-green hover:text-green-700">Privacy Policy</a> |
+      <a href="#" class="text-forest-green hover:text-green-700">Terms of Service</a>
+    </p>
+  </footer>
+
 </body>
 </html>
