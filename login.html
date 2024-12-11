@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Selling Time</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-200 text-gray-800">
+  <div class="h-screen flex flex-col justify-center items-center text-center">
+    <h1 class="text-3xl font-bold mb-6 text-forest-green">Login to Selling Time</h1>
+    <form action="/dashboard" method="POST" class="bg-white shadow-md rounded-lg p-8 max-w-md w-full">
+      <div class="mb-4">
+        <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+        <input type="email" id="email" name="email" class="w-full border-gray-300 rounded-lg shadow-sm p-3" placeholder="you@example.com" required>
+      </div>
+      <div class="mb-4">
+        <label for="password" class="block text-gray-700 font-semibold mb-2">Password</label>
+        <input type="password" id="password" name="password" class="w-full border-gray-300 rounded-lg shadow-sm p-3" placeholder="Your Password" required>
+      </div>
+      <button type="submit" class="bg-gold hover:bg-yellow-700 text-white py-3 px-6 rounded-lg w-full">
+        Login
+      </button>
+    </form>
+    <p class="mt-4 text-gray-600">
+      Don't have an account? <a href="#signup" class="text-forest-green font-semibold hover:underline">Sign up here</a>.
+    </p>
+  </div>
+</body>
+</html>
