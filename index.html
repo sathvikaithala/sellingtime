@@ -42,6 +42,16 @@
       transform: translateY(-2px);
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }
+    .btn-gold {
+      background-color: #D9B166;
+      color: white;
+    }
+    .btn-gold:hover {
+      background-color: #C9A156;
+    }
+    .checkmark {
+      color: #1C4D3B; /* Matches theme */
+    }
   </style>
 </head>
 <body class="text-gray-800">
@@ -73,7 +83,7 @@
     <div class="p-6 rounded-lg">
       <h1 class="text-4xl font-bold mb-4 text-gold">Welcome to Selling Time</h1>
       <p class="text-lg mb-6">Streamline your luxury watch business with tools designed to save time and maximize profits.</p>
-      <a href="#features" class="btn bg-gold hover:bg-yellow-700 text-white py-3 px-6 rounded-lg text-lg">
+      <a href="#features" class="btn btn-gold py-3 px-6 rounded-lg text-lg">
         Get Started
       </a>
     </div>
@@ -88,30 +98,30 @@
         <div class="card p-6 border-2 border-forest-green rounded-lg">
           <h3 class="text-2xl font-bold mb-4 text-forest-green">Enthusiast Package (FREE)</h3>
           <ul class="text-left text-gray-700 space-y-2">
-            <li><b>Social Media Content Creation</b></li>
-            <li><b>Blog Posts from Successful Watch Traders - Tips and Tricks of the Business</b></li>
+            <li><span class="checkmark">✔️</span> <b>Social Media Content Creation</b></li>
+            <li><span class="checkmark">✔️</span> <b>Blog Posts from Successful Watch Traders - Tips and Tricks of the Business</b></li>
           </ul>
         </div>
         <!-- Side Hustle Package -->
         <div class="card p-6 border-2 border-forest-green rounded-lg">
           <h3 class="text-2xl font-bold mb-4 text-gold">Side Hustle Package ($10/mo or $100/year)</h3>
           <ul class="text-left text-gray-700 space-y-2">
-            <li>Social Media Content Creation</li>
-            <li>Blog Posts from Successful Watch Traders - Tips and Tricks of the Business</li>
-            <li><b>Customized Listings, easily tailored to specific platforms</b></li>
-            <li><b>Community Resources (access to various platforms built around watch trading, shipping partners, and products to improve your business)</b></li>
+            <li><span class="checkmark">✔️</span> Social Media Content Creation</li>
+            <li><span class="checkmark">✔️</span> Blog Posts from Successful Watch Traders - Tips and Tricks of the Business</li>
+            <li><span class="checkmark">✔️</span> <b>Customized Listings, easily tailored to specific platforms</b></li>
+            <li><span class="checkmark">✔️</span> <b>Community Resources (access to various platforms built around watch trading, shipping partners, and products to improve your business)</b></li>
           </ul>
         </div>
         <!-- Dealer Package -->
         <div class="card p-6 border-2 border-forest-green rounded-lg">
           <h3 class="text-2xl font-bold mb-4 text-light-gold">Dealer Package ($20/mo or $200/year)</h3>
           <ul class="text-left text-gray-700 space-y-2">
-            <li>Social Media Content Creation</li>
-            <li>Blog Posts from Successful Watch Traders - Tips and Tricks of the Business</li>
-            <li>Customized Listings, easily tailored to specific platforms</li>
-            <li>Community Resources (access to various platforms built around watch trading, shipping partners, and products to improve your business)</li>
-            <li><b>Inventory Tracking, Profit Calculation, and Sales History</b></li>
-            <li><b>Cloud-based storage for listing images</b></li>
+            <li><span class="checkmark">✔️</span> Social Media Content Creation</li>
+            <li><span class="checkmark">✔️</span> Blog Posts from Successful Watch Traders - Tips and Tricks of the Business</li>
+            <li><span class="checkmark">✔️</span> Customized Listings, easily tailored to specific platforms</li>
+            <li><span class="checkmark">✔️</span> Community Resources (access to various platforms built around watch trading, shipping partners, and products to improve your business)</li>
+            <li><span class="checkmark">✔️</span> <b>Inventory Tracking, Profit Calculation, and Sales History</b></li>
+            <li><span class="checkmark">✔️</span> <b>Cloud-based storage for listing images</b></li>
           </ul>
         </div>
       </div>
@@ -153,7 +163,7 @@
           <label for="password" class="block text-gray-700 font-semibold mb-2">Password</label>
           <input type="password" id="password" name="password" class="w-full border-gray-300 rounded-lg shadow-sm p-3" placeholder="Create a password" required>
         </div>
-        <button type="submit" class="bg-gold hover:bg-yellow-700 text-white py-3 px-6 rounded-lg w-full">
+        <button type="submit" class="btn btn-gold py-3 px-6 rounded-lg w-full">
           Create Account
         </button>
       </form>
