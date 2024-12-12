@@ -12,9 +12,20 @@
       font-family: 'Roboto', sans-serif;
       background-color: #E8ECEC;
     }
-    h1, h2, h3 {
+    h1 {
       font-family: 'Oswald', sans-serif;
       font-weight: 700;
+      font-size: 3rem; /* Increased size */
+    }
+    h2 {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+      font-size: 2.5rem; /* Increased size */
+    }
+    h3 {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+      font-size: 2rem; /* Increased size */
     }
     .bg-forest-green {
       background-color: #1C4D3B;
@@ -66,14 +77,18 @@
       color: #1C4D3B; /* Matches theme */
     }
     .cta-section {
-      max-width: 600px;
+      max-width: 700px; /* Slightly wider */
       margin: 0 auto;
       text-align: left;
+    }
+    .content-container {
+      max-width: 1200px; /* Wider layout for the page */
+      margin: 0 auto;
     }
     hr {
       border: 0;
       border-top: 1px solid #E8ECEC;
-      margin: 16px 0;
+      margin: 16px 0 8px; /* Added spacing below */
     }
   </style>
 </head>
@@ -81,7 +96,7 @@
 
   <!-- Top Navigation Bar -->
   <nav class="bg-dark-forest-green text-white py-4">
-    <div class="max-w-7xl mx-auto flex justify-between items-center px-6">
+    <div class="content-container flex justify-between items-center px-6">
       <h1 class="text-xl font-bold">Selling Time</h1>
       <ul class="flex space-x-6">
         <li><a href="#about" class="hover:underline">About Us</a></li>
@@ -114,7 +129,7 @@
 
   <!-- Plans and Pricing Section -->
   <section id="features" class="py-12 px-6">
-    <div class="max-w-5xl mx-auto text-center">
+    <div class="content-container text-center">
       <h2 class="text-3xl font-bold mb-10 text-forest-green">Plans and Pricing</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Enthusiast Plan -->
@@ -123,6 +138,7 @@
             <h3 class="text-2xl font-bold mb-4 text-forest-green">Enthusiast Plan</h3>
             <p class="mb-6 text-gray-600">Ideal for beginners exploring luxury watch trading.</p>
             <hr />
+            <br />
             <ul class="text-left text-gray-700 space-y-4">
               <li><span class="checkmark">✔️</span> <b>Social Media Content Creation</b></li>
               <li><span class="checkmark">✔️</span> <b>Blog Posts from Successful Watch Traders - Tips and Tricks of the Business</b></li>
@@ -143,6 +159,7 @@
             <h3 class="text-2xl font-bold mb-4 text-gold">Side Hustle Plan</h3>
             <p class="mb-6 text-gray-600">Ideal for part-time resellers looking to expand their reach and efficiency.</p>
             <hr />
+            <br />
             <ul class="text-left text-gray-700 space-y-4">
               <li><span class="checkmark">✔️</span> Social Media Content Creation</li>
               <li><span class="checkmark">✔️</span> Blog Posts from Successful Watch Traders - Tips and Tricks of the Business</li>
@@ -165,6 +182,7 @@
             <h3 class="text-2xl font-bold mb-4 text-light-gold">Dealer Plan</h3>
             <p class="mb-6 text-gray-600">Perfect for high-volume sellers to keep track of important details.</p>
             <hr />
+            <br />
             <ul class="text-left text-gray-700 space-y-4">
               <li><span class="checkmark">✔️</span> Social Media Content Creation</li>
               <li><span class="checkmark">✔️</span> Blog Posts from Successful Watch Traders - Tips and Tricks of the Business</li>
@@ -176,7 +194,7 @@
             </ul>
           </div>
           <div class="mt-6">
-            <a href="/payment?plan=dealer" class="btn btn-light-gold py-3 px-6 rounded-lg block text-center">
+            <a href="/payment?plan=dealer" class="btn btn-gold py-3 px-6 rounded-lg block text-center">
               $20/mo
               <br />
               <span class="text-highlight-gray text-sm">or $200/year</span>
