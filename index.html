@@ -43,48 +43,70 @@
 </head>
 <body class="text-gray-800">
 
-  <!-- Hero Section -->
-  <header class="h-80 flex flex-col items-center justify-center text-center text-white bg-forest-green relative">
-    <div class="absolute top-4 right-4">
-      <a href="/login.html" class="btn bg-white hover:bg-gray-200 text-forest-green py-2 px-4 rounded-lg text-sm font-semibold">
-        Login
+  <!-- Navigation Bar -->
+  <nav class="bg-forest-green text-white py-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6">
+      <h1 class="text-xl font-bold">Selling Time</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#about" class="hover:underline">About Us</a></li>
+        <li><a href="#features" class="hover:underline">Features</a></li>
+        <li><a href="#blog" class="hover:underline">Blog</a></li>
+        <li><a href="#resources" class="hover:underline">Resources</a></li>
+        <li><a href="#pricing" class="hover:underline">Pricing</a></li>
+      </ul>
+      <a href="#signup" class="btn bg-white hover:bg-gray-200 text-forest-green py-2 px-4 rounded-lg text-sm font-semibold">
+        Sign Up
       </a>
     </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="h-80 flex flex-col items-center justify-center text-center text-white bg-forest-green relative">
     <div class="p-6 rounded-lg">
       <h1 class="text-4xl font-bold mb-4 text-gold">Welcome to Selling Time</h1>
       <p class="text-lg mb-6">Streamline your luxury watch business with tools designed to save time and maximize profits.</p>
-      <a href="#signup" class="btn bg-gold hover:bg-yellow-700 text-white py-3 px-6 rounded-lg text-lg">
+      <a href="#features" class="btn bg-gold hover:bg-yellow-700 text-white py-3 px-6 rounded-lg text-lg">
         Get Started
       </a>
     </div>
   </header>
 
   <!-- Features Section -->
-  <section class="py-12 px-6">
+  <section id="features" class="py-12 px-6">
     <div class="max-w-5xl mx-auto text-center">
       <h2 class="text-3xl font-bold mb-6 text-forest-green">Our Features</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="card p-6">
           <i class="fas fa-edit text-3xl text-forest-green mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Automated Listings</h3>
-          <p>Create polished Instagram posts and listing descriptions in seconds.</p>
+          <h3 class="text-xl font-semibold mb-2">Social Media Content Creation (FREE)</h3>
+          <p>Create polished Instagram posts and captivating captions effortlessly.</p>
         </div>
         <div class="card p-6">
-          <i class="fas fa-table text-3xl text-forest-green mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Buy/Sell Tracking</h3>
-          <p>Track transactions, calculate profits, and manage inventory effortlessly.</p>
+          <i class="fas fa-list text-3xl text-forest-green mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Automated Listings (Tier 1 - $5/mo)</h3>
+          <p>Tailored to specific platforms for a professional and consistent appearance.</p>
         </div>
         <div class="card p-6">
-          <i class="fas fa-user-circle text-3xl text-forest-green mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Account Management</h3>
-          <p>Keep a history of your watches, posts, and listings for easy reference.</p>
+          <i class="fas fa-chart-line text-3xl text-forest-green mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Inventory Tracking, Profit Calculation, and Sales History (Tier 2 - $15/mo)</h3>
+          <p>Track inventory, calculate profits, and maintain a complete sales history.</p>
+        </div>
+        <div class="card p-6">
+          <i class="fas fa-users text-3xl text-forest-green mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Community Resources (Tier 1 - $5/mo)</h3>
+          <p>Access watch trading platforms, shipping partners, and tools to grow your business.</p>
+        </div>
+        <div class="card p-6">
+          <i class="fas fa-lightbulb text-3xl text-forest-green mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Blog Posts (FREE)</h3>
+          <p>Learn from successful watch traders with tips and tricks of the business.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Testimonials Section -->
-  <section class="py-12 px-6">
+  <section id="testimonials" class="py-12 px-6">
     <div class="max-w-5xl mx-auto">
       <h2 class="text-3xl font-bold text-center mb-6 text-forest-green">What Our Users Say</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -102,4 +124,37 @@
 
   <!-- Call to Action Section -->
   <section id="signup" class="py-16 px-8 bg-gray-200">
-    <div class="max-w-3xl mx-a
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Join Selling Time</h2>
+      <p class="text-lg text-gray-600 mb-8">Sign up now to access tools that streamline your luxury watch business.</p>
+      <form action="/thank-you" method="POST" data-netlify="true" class="bg-white shadow-md rounded-lg p-8">
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 font-semibold mb-2">Name</label>
+          <input type="text" id="name" name="name" class="w-full border-gray-300 rounded-lg shadow-sm p-3" placeholder="Your Name" required>
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+          <input type="email" id="email" name="email" class="w-full border-gray-300 rounded-lg shadow-sm p-3" placeholder="you@example.com" required>
+        </div>
+        <div class="mb-4">
+          <label for="password" class="block text-gray-700 font-semibold mb-2">Password</label>
+          <input type="password" id="password" name="password" class="w-full border-gray-300 rounded-lg shadow-sm p-3" placeholder="Create a password" required>
+        </div>
+        <button type="submit" class="bg-gold hover:bg-yellow-700 text-white py-3 px-6 rounded-lg w-full">
+          Create Account
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 bg-gray-100 text-center text-gray-600">
+    <p>&copy; 2024 Selling Time. All rights reserved.</p>
+    <p>
+      <a href="#" class="text-forest-green hover:text-green-700">Privacy Policy</a> |
+      <a href="#" class="text-forest-green hover:text-green-700">Terms of Service</a>
+    </p>
+  </footer>
+
+</body>
+</html>
