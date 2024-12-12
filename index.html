@@ -18,8 +18,14 @@
     .bg-forest-green {
       background-color: #1C4D3B;
     }
+    .bg-dark-forest-green {
+      background-color: #123828;
+    }
     .text-forest-green {
       color: #1C4D3B;
+    }
+    .text-light-gold {
+      color: #D9B166;
     }
     .bg-gold {
       background-color: #96711A;
@@ -39,15 +45,16 @@
       transform: translateY(-2px);
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }
-    .hero {
-      background: url('https://imgur.com/gdU3pZX.jpg') no-repeat center center/cover;
+    .feature-item {
+      font-weight: 600;
+      color: #1C4D3B;
     }
   </style>
 </head>
 <body class="text-gray-800">
 
-  <!-- Navigation Bar -->
-  <nav class="bg-forest-green text-white py-4">
+  <!-- Top Navigation Bar -->
+  <nav class="bg-dark-forest-green text-white py-4">
     <div class="max-w-7xl mx-auto flex justify-between items-center px-6">
       <h1 class="text-xl font-bold">Selling Time</h1>
       <ul class="flex space-x-6">
@@ -69,49 +76,49 @@
   </nav>
 
   <!-- Hero Section -->
-  <header class="hero h-80 flex flex-col items-center justify-center text-center text-white relative">
-    <div class="p-6 rounded-lg bg-black bg-opacity-50">
-      <h1 class="text-4xl font-bold mb-4 text-gold">Streamline Your Watch Business</h1>
-      <p class="text-lg mb-6">Tools to save time, maximize profits, and grow your luxury watch business.</p>
+  <header class="h-80 flex flex-col items-center justify-center text-center text-white bg-forest-green relative">
+    <div class="p-6 rounded-lg">
+      <h1 class="text-4xl font-bold mb-4 text-gold">Welcome to Selling Time</h1>
+      <p class="text-lg mb-6">Streamline your luxury watch business with tools designed to save time and maximize profits.</p>
       <a href="#features" class="btn bg-gold hover:bg-yellow-700 text-white py-3 px-6 rounded-lg text-lg">
         Get Started
       </a>
     </div>
   </header>
 
-  <!-- Features Section -->
+  <!-- Plans and Pricing Section -->
   <section id="features" class="py-12 px-6">
     <div class="max-w-5xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6 text-forest-green">Our Packages</h2>
+      <h2 class="text-3xl font-bold mb-6 text-forest-green">Plans and Pricing</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Basic Package -->
+        <!-- Enthusiast Package -->
         <div class="card p-6">
-          <h3 class="text-2xl font-bold mb-4 text-forest-green">Basic Package (FREE)</h3>
+          <h3 class="text-2xl font-bold mb-4 text-forest-green">Enthusiast Package (FREE)</h3>
           <ul class="text-left text-gray-700 space-y-2">
-            <li>✔️ Social Media Content Creation</li>
-            <li>✔️ Blog Posts from Successful Watch Traders</li>
+            <li><span class="feature-item">✔️ Social Media Content Creation</span></li>
+            <li><span class="feature-item">✔️ Blog Posts from Successful Watch Traders</span></li>
           </ul>
         </div>
         <!-- Side Hustle Package -->
         <div class="card p-6">
-          <h3 class="text-2xl font-bold mb-4 text-gold">Side Hustle Package ($10/mo or $100/year)</h3>
+          <h3 class="text-2xl font-bold mb-4 text-light-gold">Side Hustle Package ($10/mo or $100/year)</h3>
           <ul class="text-left text-gray-700 space-y-2">
-            <li>✔️ Social Media Content Creation</li>
-            <li>✔️ Blog Posts from Successful Watch Traders</li>
-            <li>✔️ Customized Listings, easily tailored to specific platforms</li>
-            <li>✔️ Community Resources</li>
+            <li><span class="feature-item">✔️ Social Media Content Creation</span></li>
+            <li><span class="feature-item">✔️ Blog Posts from Successful Watch Traders</span></li>
+            <li><span class="feature-item">✔️ Customized Listings, easily tailored to specific platforms</span></li>
+            <li><span class="feature-item">✔️ Community Resources</span></li>
           </ul>
         </div>
-        <!-- Reseller Package -->
+        <!-- Dealer Package -->
         <div class="card p-6">
-          <h3 class="text-2xl font-bold mb-4 text-gold">Reseller Package ($20/mo or $200/year)</h3>
+          <h3 class="text-2xl font-bold mb-4 text-gold">Dealer Package ($20/mo or $200/year)</h3>
           <ul class="text-left text-gray-700 space-y-2">
-            <li>✔️ Social Media Content Creation</li>
-            <li>✔️ Blog Posts from Successful Watch Traders</li>
-            <li>✔️ Customized Listings, easily tailored to specific platforms</li>
-            <li>✔️ Community Resources</li>
-            <li>✔️ Inventory Tracking, Profit Calculation, and Sales History</li>
-            <li>✔️ Cloud-based storage for listing images</li>
+            <li><span class="feature-item">✔️ Social Media Content Creation</span></li>
+            <li><span class="feature-item">✔️ Blog Posts from Successful Watch Traders</span></li>
+            <li><span class="feature-item">✔️ Customized Listings, easily tailored to specific platforms</span></li>
+            <li><span class="feature-item">✔️ Community Resources</span></li>
+            <li><span class="feature-item">✔️ Inventory Tracking, Profit Calculation, and Sales History</span></li>
+            <li><span class="feature-item">✔️ Cloud-based storage for listing images</span></li>
           </ul>
         </div>
       </div>
