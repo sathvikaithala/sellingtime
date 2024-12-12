@@ -27,14 +27,11 @@
     .text-light-gold {
       color: #D9B166;
     }
-    .bg-gold {
-      background-color: #96711A;
-    }
     .text-gold {
       color: #96711A;
     }
     .card {
-      background: white;
+      background: rgba(255, 255, 255, 0.95); /* Slight translucency */
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
     }
@@ -44,10 +41,6 @@
     .btn:hover {
       transform: translateY(-2px);
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    }
-    .feature-item {
-      font-weight: 600;
-      color: #1C4D3B;
     }
   </style>
 </head>
@@ -92,33 +85,33 @@
       <h2 class="text-3xl font-bold mb-6 text-forest-green">Plans and Pricing</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Enthusiast Package -->
-        <div class="card p-6">
+        <div class="card p-6 border-2 border-forest-green rounded-lg">
           <h3 class="text-2xl font-bold mb-4 text-forest-green">Enthusiast Package (FREE)</h3>
           <ul class="text-left text-gray-700 space-y-2">
-            <li><span class="feature-item">✔️ Social Media Content Creation</span></li>
-            <li><span class="feature-item">✔️ Blog Posts from Successful Watch Traders</span></li>
+            <li><b>Social Media Content Creation</b></li>
+            <li><b>Blog Posts from Successful Watch Traders - Tips and Tricks of the Business</b></li>
           </ul>
         </div>
         <!-- Side Hustle Package -->
-        <div class="card p-6">
-          <h3 class="text-2xl font-bold mb-4 text-light-gold">Side Hustle Package ($10/mo or $100/year)</h3>
+        <div class="card p-6 border-2 border-forest-green rounded-lg">
+          <h3 class="text-2xl font-bold mb-4 text-gold">Side Hustle Package ($10/mo or $100/year)</h3>
           <ul class="text-left text-gray-700 space-y-2">
-            <li><span class="feature-item">✔️ Social Media Content Creation</span></li>
-            <li><span class="feature-item">✔️ Blog Posts from Successful Watch Traders</span></li>
-            <li><span class="feature-item">✔️ Customized Listings, easily tailored to specific platforms</span></li>
-            <li><span class="feature-item">✔️ Community Resources</span></li>
+            <li>Social Media Content Creation</li>
+            <li>Blog Posts from Successful Watch Traders - Tips and Tricks of the Business</li>
+            <li><b>Customized Listings, easily tailored to specific platforms</b></li>
+            <li><b>Community Resources (access to various platforms built around watch trading, shipping partners, and products to improve your business)</b></li>
           </ul>
         </div>
         <!-- Dealer Package -->
-        <div class="card p-6">
-          <h3 class="text-2xl font-bold mb-4 text-gold">Dealer Package ($20/mo or $200/year)</h3>
+        <div class="card p-6 border-2 border-forest-green rounded-lg">
+          <h3 class="text-2xl font-bold mb-4 text-light-gold">Dealer Package ($20/mo or $200/year)</h3>
           <ul class="text-left text-gray-700 space-y-2">
-            <li><span class="feature-item">✔️ Social Media Content Creation</span></li>
-            <li><span class="feature-item">✔️ Blog Posts from Successful Watch Traders</span></li>
-            <li><span class="feature-item">✔️ Customized Listings, easily tailored to specific platforms</span></li>
-            <li><span class="feature-item">✔️ Community Resources</span></li>
-            <li><span class="feature-item">✔️ Inventory Tracking, Profit Calculation, and Sales History</span></li>
-            <li><span class="feature-item">✔️ Cloud-based storage for listing images</span></li>
+            <li>Social Media Content Creation</li>
+            <li>Blog Posts from Successful Watch Traders - Tips and Tricks of the Business</li>
+            <li>Customized Listings, easily tailored to specific platforms</li>
+            <li>Community Resources (access to various platforms built around watch trading, shipping partners, and products to improve your business)</li>
+            <li><b>Inventory Tracking, Profit Calculation, and Sales History</b></li>
+            <li><b>Cloud-based storage for listing images</b></li>
           </ul>
         </div>
       </div>
